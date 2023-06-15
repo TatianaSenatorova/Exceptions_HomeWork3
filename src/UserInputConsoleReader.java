@@ -2,15 +2,7 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
-/**
- * `UserInputConsoleReader` - класс, реализующий интерфейс `UserInputReader`. Он использует
- * `Scanner` для чтения пользовательского ввода с консоли. Класс содержит метод `readUserData()`,
- * который предлагает пользователю ввести данные в определенном порядке, разделяя их пробелом. Затем
- * метод разбивает введенные данные на составляющие и выполняет их парсинг. Если формат данных
- * неверный, выбрасывается исключение `ParseException`. Если введено неверное количество данных,
- * выбрасывается `UserDataException`. Если все данные корректны, создается и возвращается объект
- * `UserData`.
- */
+
 public class UserInputConsoleReader implements UserInputReader {
     private Scanner scanner;
 
